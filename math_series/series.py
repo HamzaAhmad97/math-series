@@ -1,3 +1,6 @@
+import math_series
+
+
 def fibonacci(n, a1=0, a2=1):
     """
     This function receives a number representing the index of a number from the Fibonacci sequence.
@@ -74,3 +77,8 @@ def sum_series(idx, a1=0, a2=1):
       The number in the resulting sequence with the specified index.
     """
     return fibonacci(idx) if a1 == 0 and a2 == 1 else lucas(idx) if a1 == 2 and a2 == 1 else fibonacci(idx, a1, a2)
+
+if __name__ == "__main__":
+  print(fibonacci(5))
+  print(lucas(0))
+  print(sum_series(10,10,20))

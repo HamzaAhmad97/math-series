@@ -1,19 +1,19 @@
 from math_series import __version__
-from math_series import fibonacci, lucas, sum_series
+from math_series.series import fibonacci, lucas, sum_series
 
 
 def test_version():
     assert __version__ == '0.1.0'
 
 
-def test_fabonacci_with_a_number_0():
+def test_fibonacci_with_a_number_0():
     expected = 0
     index = 0
     actual = fibonacci(index)
     assert actual == expected
 
 
-def test_fabonacci_with_a_number_5():
+def test_fibonacci_with_a_number_5():
     expected = 5
     index = 5
     actual = fibonacci(index)
@@ -28,7 +28,7 @@ def test_lucas_with_a_number_0():
 
 
 def test_lucas_with_a_number_5():
-    expected = 7
+    expected = 11
     index = 5
     actual = lucas(index)
     assert actual == expected
@@ -42,7 +42,7 @@ def test_sum_series_with_just_an_index_10():
 
 
 def test_sum_series_with_just_an_index_5_and_positional_arguments_2_1():
-    expected = 7
+    expected = 11
     index = 5
     base1 = 2
     base2 = 1
