@@ -39,3 +39,12 @@ def test_sum_series_with_just_an_index_10():
     index = 10
     actual = sum_series(index)
     assert actual == expected
+
+
+def test_sum_series_with_just_an_index_5_and_positional_arguments_2_1():
+    expected = 7
+    index = 5
+    base1 = 2
+    base2 = 1
+    actual = sum_series(index, base1, base2)
+    assert actual == expected
