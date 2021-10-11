@@ -11,3 +11,10 @@ def test_fabonacci_with_a_number_0():
     index = 0
     actual = fibonacci(index)
     assert actual == expected
+
+
+def test_fabonacci_with_a_number_5():
+    expected = 5
+    index = 5
+    actual = fibonacci(index)
+    assert actual == expected
