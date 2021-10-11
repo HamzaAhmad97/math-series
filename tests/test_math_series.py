@@ -32,3 +32,10 @@ def test_lucas_with_a_number_5():
     index = 5
     actual = lucas(index)
     assert actual == expected
+
+
+def test_sum_series_with_just_an_index_10():
+    expected = 55
+    index = 10
+    actual = sum_series(index)
+    assert actual == expected
