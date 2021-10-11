@@ -25,3 +25,10 @@ def test_lucas_with_a_number_0():
     index = 0
     actual = lucas(index)
     assert actual == expected
+
+
+def test_lucas_with_a_number_5():
+    expected = 7
+    index = 5
+    actual = lucas(index)
+    assert actual == expected
